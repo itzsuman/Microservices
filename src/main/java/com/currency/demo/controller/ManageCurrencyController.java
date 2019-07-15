@@ -24,6 +24,7 @@ public class ManageCurrencyController {
 	@Autowired
 	CurrencyJdbcRepository currencyJdbcRepository;
 
+	//Controller class
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@PostMapping(value = "/addCurrency")
 	public ResponseEntity<String> addConversionFactor(@RequestBody Currency currency) {
